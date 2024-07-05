@@ -1,0 +1,14 @@
+*{
+    
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   background-color: #ffff;
+z-index: 20;
+
+}

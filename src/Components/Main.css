@@ -1,0 +1,178 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.outer-container{
+    display: flex;
+   
+}
+
+.content{
+    width: 30vw;
+    height: 35vh;
+    margin-top: 200px;
+    margin-left: 60px;
+    
+
+}
+
+.content:hover{
+    border: 0px solid red;
+    box-shadow: 2px 2px 2px 2px grey;
+    cursor: pointer;
+    border-radius: 35px;
+
+}
+
+.main-container img{
+    border: 0px solid red;
+    width: 20vw;
+    height: 41vh;
+    border-radius: 170px;
+    margin-top: 160px;
+    margin-left: 120px;
+    display: flex;
+    cursor: pointer;
+    
+}
+
+.main-container img:hover{
+    border: 4px solid black;
+}
+
+.main-container{
+    display: flex;
+   
+}
+
+.animators{
+    display: flex;
+    margin-left: 50px;
+}
+
+
+
+
+.one{
+    height: 9vh;
+    width: 1vw;
+
+    background-color: black;
+    margin: 200px 0px;
+    margin-left: 40px;
+    rotate: 20deg;
+    border-radius: 20px;
+    animation-name: onechange;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+
+}
+
+.one:hover{
+    height: 11vh;
+    width: 1.5vw;
+}
+
+@keyframes onechange{
+   
+   0%{
+    background-color: red;
+   }
+
+   50%{
+    rotate: 180deg;
+    margin-left: 20px;
+   }
+
+   75%{
+    background-color: black;
+   }
+
+   
+}
+
+.two{
+    height: 7vh;
+    width: 3vw;
+    background-color: black;
+    border: 0px solid red;
+    border-radius: 60px;
+    margin: 240px 0px;
+    margin-left: 50px;
+    rotate: 20deg;
+    animation-name: twochange;
+    animation-duration: 3s;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+    
+}
+
+.two:hover{
+    height: 9vh;
+    width: 3.5vw;
+}
+
+.three:hover{
+    height: 11vh;
+    width: 1.5vw;
+}
+
+@keyframes twochange{
+    from{
+        background-color: black;
+    }
+    to{
+        background-color: red;
+    }
+}
+
+.three{
+    height: 9vh;
+    width: 1vw;
+    background-color: black;
+    margin: 260px 0px;
+    margin-left: 60px;
+    rotate: 20deg;
+    border-radius: 20px;
+    animation-name: threechange;
+    animation-duration: 3s;
+    animation-delay:0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes threechange{
+    0%{
+        background-color: red;
+       }
+    
+       50%{
+        rotate: 180deg;
+
+       }
+    
+       75%{
+        background-color: black;
+       }
+    
+}
+
+@media (max-width:900px){
+    .animators{
+        display: none;
+    }
+   .main-container img{
+    width: 15vw;
+    height: 30vh;
+    }
+    .content{
+        width: 40vw;
+        height: 18vh;
+    }
+
+
+}
+
